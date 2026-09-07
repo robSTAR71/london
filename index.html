@@ -115,36 +115,48 @@
     position: relative;
     background: var(--hero);
     color: #fff;
-    text-align: center;
-    padding: 92px 0 0;
+    padding: 72px 0 0;
     overflow: hidden;
   }
-  .hero .wrap { position: relative; z-index: 2; padding-bottom: 132px; }
+  .hero .wrap { position: relative; z-index: 2; padding-bottom: 150px; }
+  .hero-grid {
+    display: grid; grid-template-columns: 1.05fr .95fr;
+    gap: 52px; align-items: center;
+  }
+  .hero-copy { text-align: left; }
   .hero .eyebrow { color: var(--orange); }
   .hero h1 {
-    font-size: clamp(46px, 9vw, 92px);
+    font-size: clamp(40px, 6.4vw, 78px);
     font-weight: 700;
     letter-spacing: -0.02em;
-    margin: 18px 0 0;
+    margin: 16px 0 0;
   }
   .hero .dedication {
     font-family: "League Spartan", sans-serif;
     font-weight: 400;
-    font-size: clamp(17px, 3vw, 22px);
+    font-size: clamp(16px, 2.4vw, 21px);
     color: rgba(255,255,255,.82);
     margin: 14px 0 0;
     letter-spacing: .02em;
   }
   .hero p.lede {
-    max-width: 54ch; margin: 20px auto 0;
+    max-width: 46ch; margin: 18px 0 0;
     color: rgba(255,255,255,.66);
-    font-size: 15.5px;
+    font-size: 15px;
   }
-  .hero .cta { margin-top: 30px; }
+  .hero .cta { margin-top: 28px; }
+
+  .hero-poster { display: flex; justify-content: center; }
+  .hero-poster img {
+    max-height: 540px; width: auto; max-width: 100%;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.16);
+    box-shadow: 0 34px 70px -26px rgba(0,0,0,.7);
+  }
 
   .countdown {
-    margin: 44px auto 0;
-    display: flex; justify-content: center; flex-wrap: wrap; gap: 14px;
+    margin: 40px 0 0;
+    display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 14px;
   }
   .cd {
     background: rgba(255,255,255,.06);
@@ -336,6 +348,13 @@
   footer .fine { font-size: 12px; margin-top: 22px; max-width: 64ch; color: rgba(255,255,255,.55); }
   footer .src { font-size: 12px; margin-top: 8px; color: rgba(255,255,255,.4); }
 
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 34px; }
+    .hero-copy { text-align: center; }
+    .hero p.lede { margin-left: auto; margin-right: auto; }
+    .countdown { justify-content: center; }
+    .hero-poster img { max-height: 460px; }
+  }
   @media (max-width: 860px) {
     .stats, .days, .wx-climate, .wx-cards { grid-template-columns: repeat(2, 1fr); }
     .passes, .cards-2 { grid-template-columns: 1fr; }
@@ -370,26 +389,33 @@
 </nav>
 
 <header class="hero" id="top">
-  <div class="wrap">
-    <div class="eyebrow">Geschwisterreise · 9.–12. Oktober 2026</div>
-    <h1>London Calling</h1>
-    <p class="dedication">Für Mama. Für Melanie. Gemeinsam an der Strecke.</p>
-    <p class="lede">Am Sonntag, 11. Oktober läuft unsere Nichte Melanie den Royal Parks Half Marathon –
-      einen Charity-Lauf im Gedenken an Mama. Robert, Heidi, Evelin und Steffi sind das ganze Wochenende dabei.</p>
-    <div class="cta"><a class="pill" href="#lauf">Zum Anfeuer-Plan</a></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Geschwisterreise · 9.–12. Oktober 2026</div>
+      <h1>London Calling</h1>
+      <p class="dedication">Für Mama. Für Melanie. Gemeinsam an der Strecke.</p>
+      <p class="lede">Am Sonntag, 11. Oktober läuft unsere Nichte Melanie den Royal Parks Half Marathon –
+        einen Charity-Lauf im Gedenken an Mama. Robert, Heidi, Evelin und Steffi sind das ganze Wochenende dabei.</p>
+      <div class="cta"><a class="pill" href="#lauf">Zum Anfeuer-Plan</a></div>
 
-    <div class="countdown">
-      <div class="cd">
-        <div class="cd-label">Bis zum Abflug</div>
-        <div class="cd-num" id="cd1">–</div>
-        <div class="cd-sub">Fr 9.10. · Linz 16:50</div>
-      </div>
-      <div class="cd">
-        <div class="cd-label">Bis Melanies Start</div>
-        <div class="cd-num" id="cd2">–</div>
-        <div class="cd-sub">So 11.10. · Hyde Park 09:00</div>
+      <div class="countdown">
+        <div class="cd">
+          <div class="cd-label">Bis zum Abflug</div>
+          <div class="cd-num" id="cd1">–</div>
+          <div class="cd-sub">Fr 9.10. · Linz 16:50</div>
+        </div>
+        <div class="cd">
+          <div class="cd-label">Bis Melanies Start</div>
+          <div class="cd-num" id="cd2">–</div>
+          <div class="cd-sub">So 11.10. · Hyde Park 09:00</div>
+        </div>
       </div>
     </div>
+
+    <figure class="hero-poster">
+      <img src="assets/hero.jpg" width="679" height="1120"
+        alt="Fotocollage: schwarz-weißes Porträt von Mama, ein Porträt von Melanie, die vier Geschwister im Pool, dahinter Big Ben und das London Eye – Schriftzug „Für Mama. Für Melanie. Gemeinsam nach London. Royal Parks Half Marathon, 11. Oktober 2026, Hyde Park.“" />
+    </figure>
   </div>
 
   <svg class="skyline" viewBox="0 0 1440 150" preserveAspectRatio="none" aria-hidden="true">

@@ -36,7 +36,13 @@ also nur an die Geschwister weitergeben.
 
 Alle Inhalte stehen direkt in `index.html`. Häufige Änderungen:
 
+- **Hero-Bild**: `assets/hero.jpg` austauschen (Hochformat, ca. 680 × 1120).
 - **Checklisten-Punkte**: Array `groups` im `<script>`-Block.
 - **Countdown-Ziele**: `departure` und `raceStart` im `<script>`-Block.
 - **Startnummer / Tracking-Link**: direkt im Abschnitt „Melanies Lauf" eintragen
   oder das Notizfeld nutzen.
+
+## Claude-Artifact-Variante
+
+`python build-artifact.py artifact.html` erzeugt eine Single-File-Fassung
+(Bild als data-URI eingebettet) zur Veröffentlichung als Claude-Artifact.
