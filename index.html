@@ -5,282 +5,323 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex, nofollow" />
 <meta name="referrer" content="no-referrer" />
-<meta name="color-scheme" content="light dark" />
+<meta name="color-scheme" content="light" />
 <title>London für Melanie</title>
 <meta name="description" content="Reise-Begleiter für die Geschwisterreise nach London, 9.–12. Oktober 2026 – zu Melanies Charity-Halbmarathon." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3Ctext%20x='8'%20y='13'%20font-size='13'%20text-anchor='middle'%3E%F0%9F%8F%83%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" />
 
 <style>
   :root {
-    --paper:      #FBF6EC;
-    --surface:    #FFFFFF;
-    --surface-2:  #F5EEDF;
-    --ink:        #17223B;
-    --ink-soft:   #4C5872;
-    --rose:       #D2324A;
-    --rose-ink:   #A7233A;
-    --pine:       #1C7C54;
-    --gold:       #B4802A;
-    --line:       #E7DECB;
-    --line-soft:  #EFE8D8;
-    --shadow:     8px 10px 30px -18px rgba(23,34,59,.30);
-    --focus:      #D2324A;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --paper:     #0F141E;
-      --surface:   #171F2D;
-      --surface-2: #1E2837;
-      --ink:       #ECEFF5;
-      --ink-soft:  #A6B1C4;
-      --rose:      #F15E75;
-      --rose-ink:  #F7889A;
-      --pine:      #55BC90;
-      --gold:      #E0A94A;
-      --line:      #2B3548;
-      --line-soft: #232D3E;
-      --shadow:    10px 14px 34px -20px rgba(0,0,0,.65);
-      --focus:     #F15E75;
-    }
-  }
-  :root[data-theme="dark"] {
-    --paper:     #0F141E;
-    --surface:   #171F2D;
-    --surface-2: #1E2837;
-    --ink:       #ECEFF5;
-    --ink-soft:  #A6B1C4;
-    --rose:      #F15E75;
-    --rose-ink:  #F7889A;
-    --pine:      #55BC90;
-    --gold:      #E0A94A;
-    --line:      #2B3548;
-    --line-soft: #232D3E;
-    --shadow:    10px 14px 34px -20px rgba(0,0,0,.65);
-    --focus:     #F15E75;
+    --orange:     #F17C46;
+    --orange-2:   #E0693A;
+    --slate:      #2E3540;
+    --slate-soft: #3B4450;
+    --hero:       #1C2025;
+    --ink:        #212529;
+    --ink-soft:   #5B6169;
+    --mist:       #F2F2F2;
+    --white:      #FFFFFF;
+    --line:       #E4E4E4;
+    --line-dark:  rgba(255,255,255,.14);
+    --shadow:     0 18px 40px -24px rgba(33,37,41,.35);
   }
 
   * { box-sizing: border-box; }
-  img { max-width: 100%; }
+  img { max-width: 100%; display: block; }
   [hidden] { display: none !important; }
-  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+  html { scroll-behavior: smooth; scroll-padding-top: 70px; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
   body {
     margin: 0;
-    background: var(--paper);
+    background: var(--white);
     color: var(--ink);
-    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    font-size: 16px;
-    line-height: 1.62;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16.5px;
+    line-height: 1.7;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
   }
 
-  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 22px; }
-  .reading { max-width: 760px; }
-
-  h1, h2, h3 { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-weight: 500; line-height: 1.12; text-wrap: balance; margin: 0; }
+  h1, h2, h3, .spartan {
+    font-family: "League Spartan", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.005em;
+    margin: 0;
+  }
 
   a { color: inherit; }
-  a.link { color: var(--rose-ink); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  strong, b { font-weight: 600; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 
   .eyebrow {
-    font-family: "IBM Plex Mono", ui-monospace, monospace;
-    font-size: 11.5px; font-weight: 500;
-    letter-spacing: .18em; text-transform: uppercase;
-    color: var(--gold);
-    display: flex; align-items: center; gap: 10px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--orange);
   }
-  .eyebrow::before { content: ""; width: 26px; height: 2px; background: currentColor; display: inline-block; }
-  .eyebrow.rose { color: var(--rose); }
-  .eyebrow.pine { color: var(--pine); }
 
-  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .pill {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: .01em;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 999px;
+    border: 0;
+    cursor: pointer;
+    transition: background .18s ease, transform .18s ease;
+  }
+  .pill:hover { background: var(--orange-2); }
+  .pill:active { transform: translateY(1px); }
+  .pill:focus-visible { outline: 3px solid rgba(241,124,70,.45); outline-offset: 3px; }
 
   /* ---------- Nav ---------- */
   .nav {
-    position: sticky; top: 0; z-index: 40;
-    background: color-mix(in srgb, var(--paper) 88%, transparent);
-    backdrop-filter: blur(9px);
-    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 50;
+    background: var(--slate);
+    color: #fff;
   }
-  .nav-inner { max-width: 1000px; margin: 0 auto; padding: 10px 22px; display: flex; align-items: center; gap: 18px; }
-  .brand { font-family: "Fraunces", serif; font-weight: 600; font-size: 16px; letter-spacing: .01em; white-space: nowrap; }
-  .brand span { color: var(--rose); }
-  .nav-links { display: flex; gap: 4px; margin-left: auto; overflow-x: auto; scrollbar-width: none; }
+  .nav-inner { max-width: 1180px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 20px; }
+  .brand {
+    font-family: "League Spartan", sans-serif; font-weight: 700;
+    font-size: 17px; letter-spacing: .12em; text-transform: uppercase;
+    white-space: nowrap; color: #fff; text-decoration: none;
+  }
+  .brand span { color: var(--orange); }
+  .nav-links { display: flex; gap: 2px; margin-left: auto; overflow-x: auto; scrollbar-width: none; }
   .nav-links::-webkit-scrollbar { display: none; }
   .nav-links a {
-    font-size: 13px; text-decoration: none; color: var(--ink-soft);
-    padding: 6px 10px; border-radius: 7px; white-space: nowrap;
+    font-family: "League Spartan", sans-serif; font-weight: 400;
+    font-size: 13.5px; letter-spacing: .04em;
+    color: rgba(255,255,255,.72); text-decoration: none;
+    padding: 8px 12px; border-radius: 6px; white-space: nowrap;
   }
-  .nav-links a:hover { color: var(--ink); background: var(--surface-2); }
-  .theme-btn {
-    flex: none; border: 1px solid var(--line); background: var(--surface);
-    color: var(--ink-soft); border-radius: 8px; width: 34px; height: 32px;
-    cursor: pointer; font-size: 15px; line-height: 1; display: grid; place-items: center;
-  }
-  .theme-btn:hover { color: var(--ink); }
+  .nav-links a:hover { color: #fff; background: rgba(255,255,255,.08); }
 
   /* ---------- Hero ---------- */
-  .hero { padding: 58px 0 40px; border-bottom: 1px solid var(--line); }
-  .hero .kicker { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); }
-  .hero h1 { font-size: clamp(42px, 8.5vw, 78px); font-weight: 600; margin: 14px 0 0; letter-spacing: -0.01em; }
-  .hero h1 em { font-style: italic; font-weight: 400; color: var(--rose); }
-  .hero .dedication { font-family: "Fraunces", serif; font-style: italic; font-size: clamp(18px, 3.4vw, 23px); color: var(--ink-soft); margin: 16px 0 0; }
-  .hero .who { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 8px; }
-  .chip {
-    font-size: 13px; padding: 4px 11px; border-radius: 999px;
-    border: 1px solid var(--line); background: var(--surface);
+  .hero {
+    position: relative;
+    background: var(--hero);
+    color: #fff;
+    text-align: center;
+    padding: 92px 0 0;
+    overflow: hidden;
   }
-  .chip.solid { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .hero .wrap { position: relative; z-index: 2; padding-bottom: 132px; }
+  .hero .eyebrow { color: var(--orange); }
+  .hero h1 {
+    font-size: clamp(46px, 9vw, 92px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 18px 0 0;
+  }
+  .hero .dedication {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 400;
+    font-size: clamp(17px, 3vw, 22px);
+    color: rgba(255,255,255,.82);
+    margin: 14px 0 0;
+    letter-spacing: .02em;
+  }
+  .hero p.lede {
+    max-width: 54ch; margin: 20px auto 0;
+    color: rgba(255,255,255,.66);
+    font-size: 15.5px;
+  }
+  .hero .cta { margin-top: 30px; }
 
-  .countdown { margin-top: 34px; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 14px; max-width: 560px; }
+  .countdown {
+    margin: 44px auto 0;
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 14px;
+  }
   .cd {
-    background: var(--surface); border: 1px solid var(--line);
-    border-radius: 14px; padding: 16px 18px; box-shadow: var(--shadow);
+    background: rgba(255,255,255,.06);
+    border: 1px solid var(--line-dark);
+    border-radius: 12px;
+    padding: 16px 26px;
+    min-width: 210px;
   }
-  .cd .cd-label { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
-  .cd .cd-num { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; font-size: 30px; font-weight: 500; margin-top: 6px; color: var(--ink); }
-  .cd .cd-num.rose { color: var(--rose); }
-  .cd .cd-sub { font-size: 12.5px; color: var(--ink-soft); margin-top: 2px; }
+  .cd .cd-label {
+    font-family: "League Spartan", sans-serif; font-weight: 600;
+    font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--orange);
+  }
+  .cd .cd-num {
+    font-family: "League Spartan", sans-serif; font-weight: 600;
+    font-size: 30px; color: #fff; margin-top: 6px;
+    font-variant-numeric: tabular-nums;
+  }
+  .cd .cd-sub { font-size: 12px; color: rgba(255,255,255,.55); margin-top: 2px; }
 
-  /* ---------- Sections ---------- */
-  section { padding: 46px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 72px; }
-  section > .wrap > h2 { font-size: clamp(26px, 4.6vw, 34px); margin: 12px 0 0; }
-  .lede { color: var(--ink-soft); margin: 10px 0 0; max-width: 60ch; }
-  .sec-body { margin-top: 26px; }
+  .skyline {
+    position: absolute; left: 0; right: 0; bottom: -1px; z-index: 1;
+    width: 100%; height: 150px; display: block;
+  }
 
-  /* ---------- Overview strip ---------- */
-  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 24px; }
-  .stat { background: var(--surface-2); border-radius: 12px; padding: 14px 16px; border: 1px solid var(--line-soft); }
-  .stat b { font-family: "Fraunces", serif; font-size: 24px; font-weight: 600; display: block; }
-  .stat span { font-size: 12.5px; color: var(--ink-soft); }
-  .overview-days { margin-top: 16px; display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
-  .od { border: 1px solid var(--line); border-radius: 12px; padding: 14px; background: var(--surface); }
-  .od .od-d { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--rose); letter-spacing: .06em; }
-  .od .od-t { font-family: "Fraunces", serif; font-size: 17px; margin-top: 4px; }
-  .od .od-x { font-size: 13px; color: var(--ink-soft); margin-top: 4px; }
+  /* ---------- Bands ---------- */
+  .band { padding: 84px 0; }
+  .band--mist { background: var(--mist); }
+  .band--white { background: var(--white); }
+  .band--slate { background: var(--slate); color: #fff; }
+  .band + .band { border-top: 1px solid var(--line); }
+  .band--slate + .band, .band + .band--slate { border-top: 0; }
 
-  /* ---------- Boarding pass ---------- */
-  .pass { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); overflow: hidden; }
-  .pass + .pass { margin-top: 18px; }
-  .pass-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 15px 20px; background: var(--ink); color: var(--paper); }
-  .pass-top .pt-tag { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; opacity: .85; }
-  .pass-top .pt-date { font-family: "IBM Plex Mono", monospace; font-size: 13px; }
-  .pass-route { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 14px; padding: 22px 20px 18px; }
-  .pass-route .ap { font-family: "Fraunces", serif; font-size: clamp(26px, 5vw, 34px); font-weight: 600; }
-  .pass-route .ap small { display: block; font-family: "IBM Plex Sans", sans-serif; font-size: 12px; font-weight: 500; color: var(--ink-soft); letter-spacing: .04em; margin-top: 2px; }
-  .pass-route .t { font-family: "IBM Plex Mono", monospace; font-size: 15px; color: var(--ink-soft); margin-top: 6px; }
-  .pass-route .arrow { color: var(--rose); font-size: 20px; }
+  .band-head { text-align: center; max-width: 640px; margin: 0 auto 44px; }
+  .band-head h2 { font-size: clamp(28px, 4.4vw, 40px); margin-top: 12px; }
+  .band-head p { color: var(--ink-soft); margin: 14px 0 0; }
+  .band--slate .band-head p { color: rgba(255,255,255,.7); }
+
+  /* ---------- Overview ---------- */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 22px; }
+  .stat { text-align: center; }
+  .stat b {
+    font-family: "League Spartan", sans-serif; font-weight: 600;
+    font-size: clamp(26px, 4vw, 36px); color: var(--orange); display: block;
+  }
+  .stat span { font-size: 13px; color: var(--ink-soft); }
+  .days { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .dcard {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 10px; padding: 20px; box-shadow: var(--shadow);
+  }
+  .dcard .d { font-family: "League Spartan", sans-serif; font-weight: 600; font-size: 12px; letter-spacing: .12em; color: var(--orange); }
+  .dcard h3 { font-size: 19px; margin-top: 6px; }
+  .dcard p { font-size: 13.5px; color: var(--ink-soft); margin: 8px 0 0; }
+
+  /* ---------- Boarding passes ---------- */
+  .passes { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .pass { background: var(--white); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); }
+  .pass-top { background: var(--slate); color: #fff; padding: 14px 20px; display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .pass-top .tag { font-family: "League Spartan", sans-serif; font-weight: 600; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+  .pass-top .date { font-size: 12.5px; color: rgba(255,255,255,.75); }
+  .pass-route { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; padding: 24px 20px 16px; }
+  .pass-route .ap { font-family: "League Spartan", sans-serif; font-weight: 700; font-size: clamp(26px, 5vw, 34px); }
+  .pass-route .ap small { display: block; font-family: "Helvetica Neue", Arial, sans-serif; font-weight: 300; font-size: 12px; color: var(--ink-soft); margin-top: 3px; }
+  .pass-route .t { font-size: 14px; color: var(--ink-soft); margin-top: 6px; font-variant-numeric: tabular-nums; }
+  .pass-route .arrow { color: var(--orange); font-size: 20px; }
   .pass-route .r { text-align: right; }
-  .perf { border-top: 1.5px dashed var(--line); position: relative; }
-  .pass-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px 14px; padding: 14px 20px 18px; }
-  .pass-meta div { font-size: 13px; }
-  .pass-meta dt { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); }
-  .pass-meta dd { margin: 2px 0 0; font-family: "IBM Plex Mono", monospace; }
-
-  .note { font-size: 13.5px; color: var(--ink-soft); margin-top: 14px; padding-left: 14px; border-left: 2px solid var(--gold); }
+  .pass-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px 14px; padding: 12px 20px 20px; border-top: 1px dashed var(--line); }
+  .pass-meta dt { font-family: "League Spartan", sans-serif; font-weight: 600; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); }
+  .pass-meta dd { margin: 2px 0 0; font-size: 13.5px; }
+  .subnote {
+    margin: 22px auto 0; max-width: 720px; text-align: center;
+    font-size: 13.5px; color: var(--ink-soft);
+  }
 
   /* ---------- Info cards ---------- */
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; box-shadow: var(--shadow); }
-  .card h3 { font-size: 20px; }
-  .kv { margin: 14px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 18px; font-size: 14px; }
+  .cards-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .infocard { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 26px; box-shadow: var(--shadow); }
+  .band--slate .infocard { background: var(--slate-soft); border-color: var(--line-dark); box-shadow: none; }
+  .infocard h3 { font-size: 21px; }
+  .kv { margin: 16px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 9px 18px; font-size: 14px; }
   .kv dt { color: var(--ink-soft); }
+  .band--slate .kv dt { color: rgba(255,255,255,.6); }
   .kv dd { margin: 0; }
-  .kv dd.mono { font-family: "IBM Plex Mono", monospace; }
-  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-
   .callout {
-    margin-top: 16px; background: color-mix(in srgb, var(--rose) 12%, var(--surface));
-    border: 1px solid color-mix(in srgb, var(--rose) 34%, var(--line));
-    border-radius: 12px; padding: 13px 16px; font-size: 13.5px;
+    margin-top: 18px; border-left: 3px solid var(--orange);
+    background: var(--mist); padding: 12px 16px; font-size: 13.5px; border-radius: 0 8px 8px 0;
   }
-  .callout b { color: var(--rose-ink); }
+  .band--slate .callout { background: rgba(255,255,255,.06); }
+  .callout b { color: var(--orange-2); }
+  .band--slate .callout b { color: var(--orange); }
 
-  /* ---------- Timeline ---------- */
-  .day { margin-top: 8px; }
-  .day-h { display: flex; align-items: baseline; gap: 12px; padding: 18px 0 8px; border-top: 1px solid var(--line); }
-  .day-h:first-child { border-top: 0; }
-  .day-h .dow { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--rose); }
-  .day-h h3 { font-size: 21px; }
-  .day-h .dd { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink-soft); margin-left: auto; }
-  .row { display: grid; grid-template-columns: 62px 1fr; gap: 16px; padding: 9px 0; }
-  .row + .row { border-top: 1px solid var(--line-soft); }
-  .row .tm { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink-soft); padding-top: 1px; }
-  .row .ev b { font-weight: 600; }
-  .row .ev p { margin: 3px 0 0; font-size: 13.5px; color: var(--ink-soft); }
-
-  /* ---------- Race ---------- */
-  #lauf { background: var(--surface-2); }
-  .race-head { display: grid; grid-template-columns: 1.1fr .9fr; gap: 28px; align-items: start; }
-  .race-facts { margin-top: 20px; display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; }
-  .race-facts .rf { background: var(--surface); border: 1px solid var(--line); border-radius: 11px; padding: 12px 14px; }
-  .race-facts .rf b { font-family: "Fraunces", serif; font-size: 18px; font-weight: 600; display: block; }
-  .race-facts .rf span { font-size: 12.5px; color: var(--ink-soft); }
-  .routemap { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; box-shadow: var(--shadow); }
-  .routemap figcaption { font-size: 12px; color: var(--ink-soft); margin-top: 8px; text-align: center; }
-  .cheer { margin-top: 22px; display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; counter-reset: cp; }
-  .cheer .cp { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; position: relative; }
-  .cheer .cp::before {
-    counter-increment: cp; content: counter(cp);
-    font-family: "Fraunces", serif; font-weight: 600; font-size: 14px;
-    width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
-    background: var(--rose); color: #fff; margin-bottom: 8px;
-  }
-  .cheer .cp b { font-size: 14px; }
-  .cheer .cp p { margin: 4px 0 0; font-size: 12.5px; color: var(--ink-soft); }
-
-  .field { margin-top: 12px; }
-  .field label { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 5px; }
+  .field { margin-top: 16px; }
+  .field label { font-family: "League Spartan", sans-serif; font-weight: 600; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 6px; }
+  .band--slate .field label { color: rgba(255,255,255,.6); }
   .field input, .field textarea {
     width: 100%; font: inherit; font-size: 14px; color: var(--ink);
-    background: var(--surface); border: 1px solid var(--line); border-radius: 9px;
-    padding: 9px 11px; resize: vertical;
+    background: var(--white); border: 1px solid var(--line); border-radius: 8px;
+    padding: 10px 12px; resize: vertical;
   }
-  .field input:focus, .field textarea:focus { outline: 2px solid var(--focus); outline-offset: 1px; border-color: transparent; }
-  .saved-hint { font-size: 11.5px; color: var(--pine); margin-top: 4px; min-height: 14px; }
+  .field input:focus, .field textarea:focus { outline: 2px solid var(--orange); outline-offset: 1px; border-color: transparent; }
+  .saved-hint { font-size: 11.5px; color: var(--orange-2); margin-top: 5px; min-height: 14px; }
+  .band--slate .saved-hint { color: var(--orange); }
+
+  /* ---------- Timeline ---------- */
+  .day { max-width: 800px; margin: 0 auto; }
+  .day-h { display: flex; align-items: baseline; gap: 12px; padding: 22px 0 10px; border-top: 1px solid var(--line); }
+  .day-h:first-child { border-top: 0; padding-top: 0; }
+  .day-h .dow { font-family: "League Spartan", sans-serif; font-weight: 600; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--orange); }
+  .day-h h3 { font-size: 20px; }
+  .day-h .dd { font-size: 13px; color: var(--ink-soft); margin-left: auto; }
+  .trow { display: grid; grid-template-columns: 76px 1fr; gap: 18px; padding: 10px 0; }
+  .trow + .trow { border-top: 1px solid var(--line); }
+  .trow .tm { font-family: "League Spartan", sans-serif; font-weight: 500; font-size: 13px; color: var(--ink-soft); }
+  .trow .ev b { font-weight: 600; }
+  .trow .ev p { margin: 4px 0 0; font-size: 13.5px; color: var(--ink-soft); }
+
+  /* ---------- Race ---------- */
+  .race-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 34px; align-items: start; max-width: 1000px; margin: 0 auto; }
+  .race-grid > .col p.intro { color: rgba(255,255,255,.8); font-size: 15px; max-width: 46ch; }
+  .rf-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: 22px; }
+  .rf { background: var(--slate-soft); border: 1px solid var(--line-dark); border-radius: 10px; padding: 14px 16px; }
+  .rf b { font-family: "League Spartan", sans-serif; font-weight: 600; font-size: 17px; display: block; }
+  .rf span { font-size: 12px; color: rgba(255,255,255,.62); }
+  .routemap { background: var(--slate-soft); border: 1px solid var(--line-dark); border-radius: 12px; padding: 16px; }
+  .routemap figcaption { font-size: 11.5px; color: rgba(255,255,255,.5); margin-top: 8px; text-align: center; }
+  .cheer { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; max-width: 1000px; margin: 40px auto 0; counter-reset: cp; }
+  .cp { background: var(--slate-soft); border: 1px solid var(--line-dark); border-radius: 10px; padding: 18px; }
+  .cp::before {
+    counter-increment: cp; content: counter(cp);
+    font-family: "League Spartan", sans-serif; font-weight: 700; font-size: 13px;
+    width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--orange); color: #fff; margin-bottom: 10px;
+  }
+  .cp b { font-size: 14.5px; }
+  .cp p { margin: 5px 0 0; font-size: 12.5px; color: rgba(255,255,255,.62); }
+  .race-note { max-width: 1000px; margin: 26px auto 0; font-size: 12.5px; color: rgba(255,255,255,.55); text-align: center; }
 
   /* ---------- Checklist ---------- */
-  .progress-wrap { margin-top: 18px; }
-  .progress-bar { height: 8px; border-radius: 999px; background: var(--surface-2); overflow: hidden; border: 1px solid var(--line-soft); }
-  .progress-bar i { display: block; height: 100%; background: var(--pine); width: 0; transition: width .35s ease; }
+  .cl { max-width: 820px; margin: 0 auto; }
+  .progress-bar { height: 8px; border-radius: 999px; background: var(--white); border: 1px solid var(--line); overflow: hidden; }
+  .progress-bar i { display: block; height: 100%; background: var(--orange); width: 0; transition: width .35s ease; }
   @media (prefers-reduced-motion: reduce) { .progress-bar i { transition: none; } }
-  .progress-txt { font-size: 12.5px; color: var(--ink-soft); margin-top: 6px; }
-  .clgroup { margin-top: 22px; }
-  .clgroup h3 { font-size: 16px; font-family: "IBM Plex Sans", sans-serif; font-weight: 600; letter-spacing: .01em; }
-  .clgroup ul { list-style: none; margin: 10px 0 0; padding: 0; }
-  .clgroup li { border-top: 1px solid var(--line-soft); }
+  .progress-txt { font-size: 12.5px; color: var(--ink-soft); margin-top: 8px; text-align: center; }
+  .clgroup { margin-top: 30px; }
+  .clgroup h3 { font-size: 15px; font-family: "League Spartan", sans-serif; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--ink); }
+  .clgroup ul { list-style: none; margin: 12px 0 0; padding: 0; }
+  .clgroup li { border-top: 1px solid var(--line); }
   .clgroup li:first-child { border-top: 0; }
-  .clgroup label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 2px; cursor: pointer; font-size: 14.5px; }
-  .clgroup input { margin: 0; margin-top: 3px; width: 17px; height: 17px; accent-color: var(--pine); flex: none; cursor: pointer; }
-  .clgroup input:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
-  .clgroup label span { transition: color .2s, opacity .2s; }
+  .clgroup label { display: flex; gap: 13px; align-items: flex-start; padding: 11px 2px; cursor: pointer; font-size: 14.5px; }
+  .clgroup input { margin: 0; margin-top: 3px; width: 17px; height: 17px; accent-color: var(--orange); flex: none; cursor: pointer; }
+  .clgroup input:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
   .clgroup input:checked + span { color: var(--ink-soft); text-decoration: line-through; opacity: .7; }
-  .cl-actions { margin-top: 20px; }
-  .btn-ghost { font: inherit; font-size: 12.5px; background: none; border: 1px solid var(--line); color: var(--ink-soft); border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+  .cl-actions { text-align: center; margin-top: 26px; }
+  .btn-ghost { font: inherit; font-family: "League Spartan", sans-serif; font-weight: 500; font-size: 13px; background: none; border: 1px solid var(--line); color: var(--ink-soft); border-radius: 999px; padding: 9px 20px; cursor: pointer; }
   .btn-ghost:hover { color: var(--ink); border-color: var(--ink-soft); }
 
   /* ---------- Footer ---------- */
-  footer { padding: 40px 0 60px; }
-  footer .codes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
-  footer .codes .chip { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; }
-  footer .fine { font-size: 12px; color: var(--ink-soft); margin-top: 20px; max-width: 62ch; }
-  footer .src { font-size: 12px; color: var(--ink-soft); margin-top: 8px; }
+  footer { background: var(--slate); color: rgba(255,255,255,.7); padding: 56px 0; }
+  footer h2 { color: #fff; font-size: 24px; }
+  footer .eyebrow { color: var(--orange); }
+  footer .codes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  footer .code { border: 1px solid var(--line-dark); border-radius: 999px; padding: 6px 14px; font-size: 12.5px; font-family: "League Spartan", sans-serif; font-weight: 400; }
+  footer .fine { font-size: 12px; margin-top: 22px; max-width: 64ch; color: rgba(255,255,255,.55); }
+  footer .src { font-size: 12px; margin-top: 8px; color: rgba(255,255,255,.4); }
 
-  @media (max-width: 780px) {
-    .countdown { grid-template-columns: 1fr; }
-    .stats, .overview-days { grid-template-columns: repeat(2,1fr); }
-    .grid-2 { grid-template-columns: 1fr; }
-    .race-head { grid-template-columns: 1fr; }
+  @media (max-width: 860px) {
+    .stats, .days { grid-template-columns: repeat(2, 1fr); }
+    .passes, .cards-2 { grid-template-columns: 1fr; }
+    .race-grid { grid-template-columns: 1fr; }
     .cheer { grid-template-columns: 1fr; }
     .pass-meta { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 460px) {
-    .stats, .overview-days { grid-template-columns: 1fr; }
-    .race-facts { grid-template-columns: 1fr; }
+    .band { padding: 60px 0; }
+    .stats, .days { grid-template-columns: 1fr; }
+    .rf-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -288,7 +329,7 @@
 
 <nav class="nav">
   <div class="nav-inner">
-    <div class="brand">London <span>&hearts;</span> Melanie</div>
+    <a class="brand" href="#top">London <span>&hearts;</span> Melanie</a>
     <div class="nav-links">
       <a href="#ueberblick">Überblick</a>
       <a href="#fluege">Flüge</a>
@@ -298,28 +339,19 @@
       <a href="#checkliste">Checkliste</a>
       <a href="#infos">Infos</a>
     </div>
-    <button class="theme-btn" id="themeBtn" aria-label="Hell / dunkel umschalten">◐</button>
   </div>
 </nav>
 
-<header class="hero">
+<header class="hero" id="top">
   <div class="wrap">
-    <div class="kicker">Geschwisterreise · 9.–12. Oktober 2026 · London &amp; St Albans</div>
-    <h1>London <em>Calling</em></h1>
+    <div class="eyebrow">Geschwisterreise · 9.–12. Oktober 2026</div>
+    <h1>London Calling</h1>
     <p class="dedication">Für Mama. Für Melanie. Gemeinsam an der Strecke.</p>
-    <p class="lede reading">Am Sonntag, 11. Oktober läuft unsere Nichte Melanie den Royal Parks Half Marathon –
-      einen Charity-Halbmarathon im Gedenken an Mama. Robert, Heidi, Evelin und Steffi sind das Wochenende über dabei,
-      um sie anzufeuern. Diese Seite bündelt Flüge, Unterkunft, den Tagesplan und den Anfeuer-Plan.</p>
+    <p class="lede">Am Sonntag, 11. Oktober läuft unsere Nichte Melanie den Royal Parks Half Marathon –
+      einen Charity-Lauf im Gedenken an Mama. Robert, Heidi, Evelin und Steffi sind das ganze Wochenende dabei.</p>
+    <div class="cta"><a class="pill" href="#lauf">Zum Anfeuer-Plan</a></div>
 
-    <div class="who">
-      <span class="chip solid">Robert</span>
-      <span class="chip">Heidi</span>
-      <span class="chip">Evelin</span>
-      <span class="chip">Steffi</span>
-      <span class="chip">+ Melanie an der Strecke</span>
-    </div>
-
-    <div class="countdown" id="countdown">
+    <div class="countdown">
       <div class="cd">
         <div class="cd-label">Bis zum Abflug</div>
         <div class="cd-num" id="cd1">–</div>
@@ -327,19 +359,30 @@
       </div>
       <div class="cd">
         <div class="cd-label">Bis Melanies Start</div>
-        <div class="cd-num rose" id="cd2">–</div>
+        <div class="cd-num" id="cd2">–</div>
         <div class="cd-sub">So 11.10. · Hyde Park 09:00</div>
       </div>
     </div>
   </div>
+
+  <svg class="skyline" viewBox="0 0 1440 150" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#262B31" d="M0,150 L0,96 L60,96 L60,78 L96,78 L96,96 L150,96 L150,60 L162,44 L174,60 L174,96 L250,96
+      L250,70 L262,70 L262,48 L274,48 L274,70 L286,70 L286,96 L360,96 L360,52 L420,52 L420,40 L430,40 L430,96
+      L520,96 L540,30 L560,96 L640,96 L640,66 L700,66 L700,96 L760,96 L770,20 L780,96 L900,96 L900,74
+      L930,74 L930,58 L1000,58 L1000,96 L1080,96 L1080,44 L1092,44 L1092,26 L1104,26 L1104,44 L1116,44 L1116,96
+      L1220,96 L1220,72 L1280,72 L1280,84 L1340,84 L1340,64 L1400,64 L1400,96 L1440,96 L1440,150 Z"/>
+    <rect x="0" y="148" width="1440" height="3" fill="#F17C46"/>
+  </svg>
 </header>
 
 <main>
-  <section id="ueberblick">
+  <section class="band band--mist" id="ueberblick">
     <div class="wrap">
-      <div class="eyebrow">Auf einen Blick</div>
-      <h2>Vier Tage, ein Ziel</h2>
-      <p class="lede">Anreise Freitagabend, Samstag St Albans und London, Sonntag der Lauf, Montag in aller Frühe zurück.</p>
+      <div class="band-head">
+        <div class="eyebrow">Auf einen Blick</div>
+        <h2>Vier Tage, ein Ziel</h2>
+        <p>Anreise Freitagabend, Samstag St Albans und London, Sonntag der Lauf, Montag in aller Frühe zurück.</p>
+      </div>
 
       <div class="stats">
         <div class="stat"><b>4</b><span>Geschwister unterwegs</span></div>
@@ -348,30 +391,31 @@
         <div class="stat"><b>02:45</b><span>Wecker am Abreisetag</span></div>
       </div>
 
-      <div class="overview-days">
-        <div class="od"><div class="od-d">FR 09.10.</div><div class="od-t">Anreise</div><div class="od-x">Landung Stansted, Transfer, Pub-Dinner in St Albans.</div></div>
-        <div class="od"><div class="od-d">SA 10.10.</div><div class="od-t">St Albans &amp; London</div><div class="od-x">Cathedral und Charter Market, nachmittags London kompakt.</div></div>
-        <div class="od"><div class="od-d">SO 11.10.</div><div class="od-t">Melanies Lauf</div><div class="od-x">Früh in den Hyde Park, anfeuern, danach gemeinsam feiern.</div></div>
-        <div class="od"><div class="od-d">MO 12.10.</div><div class="od-t">Heimreise</div><div class="od-x">Privattransfer 03:30, Rückflug ab Stansted 06:45.</div></div>
+      <div class="days">
+        <div class="dcard"><div class="d">FR 09.10.</div><h3>Anreise</h3><p>Landung Stansted, Privattransfer, Pub-Dinner in St Albans.</p></div>
+        <div class="dcard"><div class="d">SA 10.10.</div><h3>St Albans &amp; London</h3><p>Cathedral und Charter Market, nachmittags London kompakt.</p></div>
+        <div class="dcard"><div class="d">SO 11.10.</div><h3>Melanies Lauf</h3><p>Früh in den Hyde Park, anfeuern, danach gemeinsam feiern.</p></div>
+        <div class="dcard"><div class="d">MO 12.10.</div><h3>Heimreise</h3><p>Privattransfer 03:30, Rückflug ab Stansted 06:45.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="fluege">
+  <section class="band band--white" id="fluege">
     <div class="wrap">
-      <div class="eyebrow rose">Ryanair · Reservierung NSSGWB</div>
-      <h2>Flüge</h2>
-      <p class="lede">Beide Flüge bestätigt. Alle vier mit kleinem Handgepäck (40 × 30 × 20 cm). Heidi, Evelin und Steffi zusätzlich mit je 10 kg Aufgabegepäck; Fast-Track-Sicherheitskontrolle beim Rückflug für alle vier.</p>
+      <div class="band-head">
+        <div class="eyebrow">Ryanair · Reservierung NSSGWB</div>
+        <h2>Flüge</h2>
+        <p>Beide Flüge bestätigt. Alle vier mit kleinem Handgepäck (40 × 30 × 20 cm); Heidi, Evelin und Steffi zusätzlich mit je 10 kg Aufgabegepäck.</p>
+      </div>
 
-      <div class="sec-body">
+      <div class="passes">
         <article class="pass">
-          <div class="pass-top"><span class="pt-tag">Hinflug · RK1694</span><span class="pt-date">Fr 9. Okt 2026</span></div>
+          <div class="pass-top"><span class="tag">Hinflug · RK1694</span><span class="date">Fr 9. Okt 2026</span></div>
           <div class="pass-route">
             <div><div class="ap">LNZ<small>Linz</small></div><div class="t">16:50</div></div>
             <div class="arrow">&rarr;</div>
             <div class="r"><div class="ap">STN<small>London Stansted</small></div><div class="t">17:50</div></div>
           </div>
-          <div class="perf"></div>
           <dl class="pass-meta">
             <div><dt>Flug</dt><dd>RK1694</dd></div>
             <div><dt>Airline</dt><dd>Ryanair UK</dd></div>
@@ -380,34 +424,36 @@
         </article>
 
         <article class="pass">
-          <div class="pass-top"><span class="pt-tag">Rückflug · FR1695</span><span class="pt-date">Mo 12. Okt 2026</span></div>
+          <div class="pass-top"><span class="tag">Rückflug · FR1695</span><span class="date">Mo 12. Okt 2026</span></div>
           <div class="pass-route">
             <div><div class="ap">STN<small>London Stansted</small></div><div class="t">06:45</div></div>
             <div class="arrow">&rarr;</div>
             <div class="r"><div class="ap">LNZ<small>Linz</small></div><div class="t">09:40</div></div>
           </div>
-          <div class="perf"></div>
           <dl class="pass-meta">
             <div><dt>Flug</dt><dd>FR1695</dd></div>
             <div><dt>Fast Track</dt><dd>für alle 4</dd></div>
-            <div><dt>Ortszeit</dt><dd>Ankunft 09:40</dd></div>
+            <div><dt>Ankunft</dt><dd>09:40 Ortszeit</dd></div>
           </dl>
         </article>
-
-        <p class="note">Reisende laut Buchung: Robert Preinfalk, Stephanie Schwab, Adelheid Preinfalk, Evelin Hetzmannseder.
-          Bezahlt: 671,52 € (PayPal). Vor der Reise: Online-Check-in in der Ryanair-App, digitale Bordkarten sichern.</p>
       </div>
+
+      <p class="subnote">Reisende laut Buchung: Robert Preinfalk, Stephanie Schwab, Adelheid Preinfalk, Evelin Hetzmannseder.
+        Bezahlt 671,52 € (PayPal). Fast-Track-Sicherheitskontrolle beim Rückflug für alle vier.
+        Vor der Reise: Online-Check-in in der Ryanair-App, digitale Bordkarten sichern.</p>
     </div>
   </section>
 
-  <section id="unterkunft">
+  <section class="band band--mist" id="unterkunft">
     <div class="wrap">
-      <div class="eyebrow pine">Airbnb · HM9HW9RJP8</div>
-      <h2>Unterkunft &amp; Transfer</h2>
-      <p class="lede">Ganze Unterkunft in St Albans, 3 Nächte, 4 Gäste. Check-in eigenständig über die Schlüsselbox.</p>
+      <div class="band-head">
+        <div class="eyebrow">Airbnb · HM9HW9RJP8</div>
+        <h2>Unterkunft &amp; Transfer</h2>
+        <p>Ganze Unterkunft in St Albans, 3 Nächte, 4 Gäste. Check-in eigenständig über die Schlüsselbox.</p>
+      </div>
 
-      <div class="sec-body grid-2">
-        <div class="card">
+      <div class="cards-2">
+        <div class="infocard">
           <h3>Stylish St Albans City Retreat</h3>
           <dl class="kv">
             <dt>Adresse</dt><dd>35 Spencer Street, St Albans, Hertfordshire AL3 5EH</dd>
@@ -416,15 +462,15 @@
             <dt>Gastgeber</dt><dd>Leo</dd>
             <dt>Check-in</dt><dd>Schlüsselbox / eigenständig</dd>
             <dt>Check-out</dt><dd>Montag bis 10:00</dd>
-            <dt>Code</dt><dd class="mono">HM9HW9RJP8</dd>
+            <dt>Code</dt><dd>HM9HW9RJP8</dd>
             <dt>Hausregel</dt><dd>keine Haustiere</dd>
           </dl>
           <div class="callout">Zugangscode und WLAN-Daten kommen <b>48 Stunden vor Check-in</b>. Rechtzeitig prüfen und für alle notieren.</div>
         </div>
 
-        <div class="card">
+        <div class="infocard">
           <h3>Privater Flughafentransfer</h3>
-          <p class="lede" style="margin-top:6px">Hin- und Rückfahrt zwischen Stansted und der Unterkunft werden privat organisiert – nicht über ÖPNV.</p>
+          <p style="margin-top:8px;color:var(--ink-soft);font-size:14.5px">Hin- und Rückfahrt zwischen Stansted und der Unterkunft werden privat organisiert – nicht über ÖPNV.</p>
           <dl class="kv">
             <dt>Freitag</dt><dd>Abholung Stansted nach Ankunft (ca. 18:00), Fahrt nach St Albans</dd>
             <dt>Montag</dt><dd>Abfahrt bei der Unterkunft <b>gegen 03:30</b>, Ziel Flughafen spätestens ca. 04:00</dd>
@@ -440,61 +486,63 @@
     </div>
   </section>
 
-  <section id="programm">
+  <section class="band band--white" id="programm">
     <div class="wrap">
-      <div class="eyebrow">Tag für Tag</div>
-      <h2>Programm</h2>
-      <p class="lede">Richtwerte – Detailfahrpläne, Cheer Points und Race Guide 1–2 Wochen vor Abreise nochmals prüfen.</p>
+      <div class="band-head">
+        <div class="eyebrow">Tag für Tag</div>
+        <h2>Programm</h2>
+        <p>Richtwerte – Detailfahrpläne, Cheer Points und Race Guide 1–2 Wochen vor Abreise nochmals prüfen.</p>
+      </div>
 
-      <div class="sec-body">
-        <div class="day">
-          <div class="day-h"><span class="dow">Freitag</span><h3>Anreise &amp; erster Abend</h3><span class="dd">9. Okt</span></div>
-          <div class="row"><div class="tm">16:50</div><div class="ev"><b>Abflug Linz</b><p>RK1694, Landung Stansted 17:50 Ortszeit.</p></div></div>
-          <div class="row"><div class="tm">~18:15</div><div class="ev"><b>Privattransfer nach St Albans</b><p>Abholung am Flughafen, Fahrt zur Unterkunft.</p></div></div>
-          <div class="row"><div class="tm">abends</div><div class="ev"><b>Ankommen &amp; Pub-Dinner</b><p>Schlüsselbox, kurzer Spaziergang zur High Street, gemeinsames Abendessen im Pub.</p></div></div>
-        </div>
+      <div class="day">
+        <div class="day-h"><span class="dow">Freitag</span><h3>Anreise &amp; erster Abend</h3><span class="dd">9. Okt</span></div>
+        <div class="trow"><div class="tm">16:50</div><div class="ev"><b>Abflug Linz</b><p>RK1694, Landung Stansted 17:50 Ortszeit.</p></div></div>
+        <div class="trow"><div class="tm">~18:15</div><div class="ev"><b>Privattransfer nach St Albans</b><p>Abholung am Flughafen, Fahrt zur Unterkunft.</p></div></div>
+        <div class="trow"><div class="tm">abends</div><div class="ev"><b>Ankommen &amp; Pub-Dinner</b><p>Schlüsselbox, kurzer Spaziergang zur High Street, gemeinsames Abendessen im Pub.</p></div></div>
+      </div>
 
-        <div class="day">
-          <div class="day-h"><span class="dow">Samstag</span><h3>St Albans &amp; London kompakt</h3><span class="dd">10. Okt</span></div>
-          <div class="row"><div class="tm">Vormittag</div><div class="ev"><b>St Albans</b><p>Cathedral, mittelalterlicher Clock Tower und Charter Market (samstags 09:00–16:30).</p></div></div>
-          <div class="row"><div class="tm">Nachmittag</div><div class="ev"><b>London zu Fuß</b><p>Westminster → St James’s Park → Buckingham Palace → Trafalgar Square → Covent Garden / Soho.</p></div></div>
-          <div class="row"><div class="tm">abends</div><div class="ev"><b>Abendessen</b><p>Pub, West End oder Dinner in Covent Garden. Nicht zu spät – Sonntag wird früh.</p></div></div>
-        </div>
+      <div class="day" style="margin-top:34px">
+        <div class="day-h"><span class="dow">Samstag</span><h3>St Albans &amp; London kompakt</h3><span class="dd">10. Okt</span></div>
+        <div class="trow"><div class="tm">Vormittag</div><div class="ev"><b>St Albans</b><p>Cathedral, mittelalterlicher Clock Tower und Charter Market (samstags 09:00–16:30).</p></div></div>
+        <div class="trow"><div class="tm">Nachmittag</div><div class="ev"><b>London zu Fuß</b><p>Westminster → St James’s Park → Buckingham Palace → Trafalgar Square → Covent Garden / Soho.</p></div></div>
+        <div class="trow"><div class="tm">abends</div><div class="ev"><b>Abendessen</b><p>Pub, West End oder Dinner in Covent Garden. Nicht zu spät – Sonntag wird früh.</p></div></div>
+      </div>
 
-        <div class="day">
-          <div class="day-h"><span class="dow">Sonntag</span><h3>Melanies Lauf</h3><span class="dd">11. Okt</span></div>
-          <div class="row"><div class="tm">~06:45</div><div class="ev"><b>Unterkunft verlassen</b><p>Zu Fuß / Taxi nach St Albans City → Thameslink nach St Pancras (schnellste Fahrt ca. 22 Min.) → Piccadilly Line bis Hyde Park Corner.</p></div></div>
-          <div class="row"><div class="tm">~08:15</div><div class="ev"><b>Ankunft Hyde Park</b><p>Puffer einplanen – Menschenmengen und temporäre Sperren sind wahrscheinlich. Alternativstationen: Knightsbridge / Marble Arch.</p></div></div>
-          <div class="row"><div class="tm">09:00</div><div class="ev"><b>Start</b><p>Wellen bis etwa 09:30–09:45. Anfeuern nach Plan (siehe Melanies Lauf).</p></div></div>
-          <div class="row"><div class="tm">danach</div><div class="ev"><b>Mit Melanie feiern</b><p>Event Village, spätes Frühstück / Lunch rund um Knightsbridge / South Kensington.</p></div></div>
-          <div class="row"><div class="tm">Nachmittag</div><div class="ev"><b>Locker ausklingen</b><p>Kensington Gardens, Notting Hill oder Spaziergang am Serpentine Lake – je nach Melanies Energie. Abends rechtzeitig zurück.</p></div></div>
-        </div>
+      <div class="day" style="margin-top:34px">
+        <div class="day-h"><span class="dow">Sonntag</span><h3>Melanies Lauf</h3><span class="dd">11. Okt</span></div>
+        <div class="trow"><div class="tm">~06:45</div><div class="ev"><b>Unterkunft verlassen</b><p>Zu Fuß / Taxi nach St Albans City → Thameslink nach St Pancras (schnellste Fahrt ca. 22 Min.) → Piccadilly Line bis Hyde Park Corner.</p></div></div>
+        <div class="trow"><div class="tm">~08:15</div><div class="ev"><b>Ankunft Hyde Park</b><p>Puffer einplanen – Menschenmengen und temporäre Sperren sind wahrscheinlich. Alternativstationen: Knightsbridge / Marble Arch.</p></div></div>
+        <div class="trow"><div class="tm">09:00</div><div class="ev"><b>Start</b><p>Wellen bis etwa 09:30–09:45. Anfeuern nach Plan (siehe Melanies Lauf).</p></div></div>
+        <div class="trow"><div class="tm">danach</div><div class="ev"><b>Mit Melanie feiern</b><p>Event Village, spätes Frühstück / Lunch rund um Knightsbridge / South Kensington.</p></div></div>
+        <div class="trow"><div class="tm">Nachmittag</div><div class="ev"><b>Locker ausklingen</b><p>Kensington Gardens, Notting Hill oder Spaziergang am Serpentine Lake – je nach Melanies Energie.</p></div></div>
+      </div>
 
-        <div class="day">
-          <div class="day-h"><span class="dow">Montag</span><h3>Heimreise</h3><span class="dd">12. Okt</span></div>
-          <div class="row"><div class="tm">02:45</div><div class="ev"><b>Wecker</b><p>Fertig machen, Unterkunft übergeben (Schlüsselbox).</p></div></div>
-          <div class="row"><div class="tm">03:30</div><div class="ev"><b>Privattransfer zum Flughafen</b><p>Ziel: Ankunft Stansted spätestens ca. 04:00.</p></div></div>
-          <div class="row"><div class="tm">06:45</div><div class="ev"><b>Rückflug FR1695</b><p>Ankunft Linz 09:40.</p></div></div>
-        </div>
+      <div class="day" style="margin-top:34px">
+        <div class="day-h"><span class="dow">Montag</span><h3>Heimreise</h3><span class="dd">12. Okt</span></div>
+        <div class="trow"><div class="tm">02:45</div><div class="ev"><b>Wecker</b><p>Fertig machen, Unterkunft übergeben (Schlüsselbox).</p></div></div>
+        <div class="trow"><div class="tm">03:30</div><div class="ev"><b>Privattransfer zum Flughafen</b><p>Ziel: Ankunft Stansted spätestens ca. 04:00.</p></div></div>
+        <div class="trow"><div class="tm">06:45</div><div class="ev"><b>Rückflug FR1695</b><p>Ankunft Linz 09:40.</p></div></div>
       </div>
     </div>
   </section>
 
-  <section id="lauf">
+  <section class="band band--slate" id="lauf">
     <div class="wrap">
-      <div class="eyebrow rose">Sonntag, 11. Oktober · Für Mama</div>
-      <h2>Melanies Lauf</h2>
+      <div class="band-head">
+        <div class="eyebrow">Sonntag, 11. Oktober · Für Mama</div>
+        <h2>Melanies Lauf</h2>
+      </div>
 
-      <div class="sec-body race-head">
-        <div>
-          <p class="lede" style="max-width:48ch">OYSHO Royal Parks Half Marathon – 21,1 km durch vier Royal Parks, vorbei an Buckingham Palace, Big Ben und der Royal Albert Hall. Melanie läuft für den guten Zweck, im Gedenken an Mama.</p>
-          <div class="race-facts">
+      <div class="race-grid">
+        <div class="col">
+          <p class="intro">OYSHO Royal Parks Half Marathon – 21,1 km durch vier Royal Parks, vorbei an Buckingham Palace, Big Ben und der Royal Albert Hall. Melanie läuft für den guten Zweck, im Gedenken an Mama.</p>
+          <div class="rf-grid">
             <div class="rf"><b>09:00 Uhr</b><span>Start (Wellen bis ~09:45)</span></div>
             <div class="rf"><b>21,1 km</b><span>flacher Stadtkurs</span></div>
             <div class="rf"><b>Hyde Park</b><span>Start &amp; Ziel: South Carriage Drive</span></div>
             <div class="rf"><b>Event Village</b><span>offen für Begleitpersonen</span></div>
           </div>
-          <div class="callout" style="margin-top:16px">Startnummer, Startwelle und Live-Tracking-Link hier ergänzen, sobald von Melanie / dem Veranstalter verfügbar.</div>
+          <div class="callout" style="margin-top:18px">Startnummer, Startwelle und Live-Tracking-Link hier ergänzen, sobald von Melanie / dem Veranstalter verfügbar.</div>
           <div class="field">
             <label for="meetNote">Treffpunkt nach dem Ziel (mit Melanie vereinbaren)</label>
             <input id="meetNote" type="text" placeholder="z. B. Event Village, Ausgang Süd, 11:30 Uhr" />
@@ -509,56 +557,57 @@
 
         <figure class="routemap">
           <svg viewBox="0 0 320 240" width="100%" role="img" aria-label="Schematische Laufroute durch die Royal Parks mit Anfeuer-Punkten.">
-            <rect x="0" y="0" width="320" height="240" rx="10" fill="var(--surface-2)"/>
-            <g fill="none" stroke="var(--pine)" stroke-opacity="0.25">
+            <rect x="0" y="0" width="320" height="240" rx="10" fill="rgba(255,255,255,.03)"/>
+            <g fill="none" stroke="rgba(255,255,255,.16)">
               <rect x="18" y="30" width="120" height="80" rx="8"/>
               <rect x="150" y="26" width="150" height="60" rx="8"/>
               <rect x="150" y="98" width="90" height="52" rx="8"/>
               <rect x="120" y="150" width="150" height="66" rx="8"/>
             </g>
-            <text x="24" y="46" font-size="8" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">HYDE PARK</text>
-            <text x="156" y="40" font-size="8" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">KENSINGTON GDNS</text>
-            <text x="156" y="112" font-size="8" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">GREEN PARK</text>
-            <text x="126" y="164" font-size="8" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">ST JAMES’S PARK</text>
+            <g font-family="League Spartan, sans-serif" font-size="8" fill="rgba(255,255,255,.5)">
+              <text x="24" y="46">HYDE PARK</text>
+              <text x="156" y="40">KENSINGTON GDNS</text>
+              <text x="156" y="112">GREEN PARK</text>
+              <text x="126" y="164">ST JAMES’S PARK</text>
+            </g>
             <path d="M70 96 C 40 70, 60 40, 110 44 C 180 50, 150 92, 200 100 C 250 108, 240 150, 190 168 C 150 182, 120 150, 92 150 C 60 150, 55 120, 70 96 Z"
-                  fill="none" stroke="var(--rose)" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="1 0"/>
-            <g font-family="IBM Plex Mono, monospace" font-size="8" fill="var(--ink)">
-              <circle cx="70" cy="96" r="4.5" fill="var(--rose)"/><text x="30" y="118">Start/Ziel</text>
-              <circle cx="150" cy="60" r="3.5" fill="var(--gold)"/><text x="120" y="72">Albert Hall</text>
-              <circle cx="192" cy="120" r="3.5" fill="var(--gold)"/><text x="196" y="122">Buckingham P.</text>
-              <circle cx="150" cy="176" r="3.5" fill="var(--gold)"/><text x="150" y="192">Big Ben</text>
+                  fill="none" stroke="#F17C46" stroke-width="2.6" stroke-linecap="round"/>
+            <g font-family="League Spartan, sans-serif" font-size="8" fill="#fff">
+              <circle cx="70" cy="96" r="4.5" fill="#F17C46"/><text x="30" y="118">Start/Ziel</text>
+              <circle cx="150" cy="60" r="3.3" fill="#fff"/><text x="120" y="72">Albert Hall</text>
+              <circle cx="192" cy="120" r="3.3" fill="#fff"/><text x="196" y="122">Buckingham P.</text>
+              <circle cx="150" cy="176" r="3.3" fill="#fff"/><text x="150" y="192">Big Ben</text>
             </g>
           </svg>
           <figcaption>Schematische Route – keine Navigationskarte.</figcaption>
         </figure>
       </div>
 
-      <h3 style="font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:16px;margin-top:28px">Anfeuer-Plan</h3>
       <div class="cheer">
         <div class="cp"><b>Startbereich</b><p>South Carriage Drive – Melanie vor dem Start sehen und in die Welle schicken.</p></div>
         <div class="cp"><b>Offizieller Cheer Point</b><p>An der Strecke Position beziehen. Genaue Punkte aus dem Race Guide kurz vor der Reise.</p></div>
         <div class="cp"><b>Finale &amp; Event Village</b><p>Zieleinlauf im Hyde Park, danach am vereinbarten Treffpunkt sammeln.</p></div>
       </div>
 
-      <p class="note">Anreise zum Hyde Park: Thameslink St Albans City → St Pancras (~22 Min.) → Piccadilly Line bis Hyde Park Corner → ca. 15 Min. zu Fuß zum Event Village. Ziel: bis ca. 08:15 vor Ort.</p>
+      <p class="race-note">Anreise zum Hyde Park: Thameslink St Albans City → St Pancras (~22 Min.) → Piccadilly Line bis Hyde Park Corner → ca. 15 Min. zu Fuß zum Event Village. Ziel: bis ca. 08:15 vor Ort.</p>
     </div>
   </section>
 
-  <section id="checkliste">
+  <section class="band band--mist" id="checkliste">
     <div class="wrap">
-      <div class="eyebrow">Vorbereitung</div>
-      <h2>Checkliste</h2>
-      <p class="lede">Wird lokal in diesem Browser gespeichert – jede:r hakt die eigene Liste auf dem eigenen Gerät ab.</p>
-
-      <div class="progress-wrap">
-        <div class="progress-bar"><i id="progFill"></i></div>
-        <div class="progress-txt" id="progTxt">0 von 0 erledigt</div>
+      <div class="band-head">
+        <div class="eyebrow">Vorbereitung</div>
+        <h2>Checkliste</h2>
+        <p>Wird lokal in diesem Browser gespeichert – jede:r hakt die eigene Liste auf dem eigenen Gerät ab.</p>
       </div>
 
-      <div id="checklist"></div>
-
-      <div class="cl-actions">
-        <button class="btn-ghost" id="resetCl">Alle Haken zurücksetzen</button>
+      <div class="cl">
+        <div class="progress-bar"><i id="progFill"></i></div>
+        <div class="progress-txt" id="progTxt">0 von 0 erledigt</div>
+        <div id="checklist"></div>
+        <div class="cl-actions">
+          <button class="btn-ghost" id="resetCl">Alle Haken zurücksetzen</button>
+        </div>
       </div>
     </div>
   </section>
@@ -566,11 +615,11 @@
   <footer id="infos">
     <div class="wrap">
       <div class="eyebrow">Infos &amp; Buchungen</div>
-      <h2 style="font-size:26px;margin-top:12px">Codes &amp; Quellen</h2>
+      <h2 style="margin-top:12px">Codes &amp; Quellen</h2>
       <div class="codes">
-        <span class="chip">Ryanair · NSSGWB</span>
-        <span class="chip">Airbnb · HM9HW9RJP8</span>
-        <span class="chip">Airbnb-Quittung · RCFTNZSC82</span>
+        <span class="code">Ryanair · NSSGWB</span>
+        <span class="code">Airbnb · HM9HW9RJP8</span>
+        <span class="code">Airbnb-Quittung · RCFTNZSC82</span>
       </div>
       <p class="fine">Stand: 23.08.2026. Fahrpläne, Straßensperren und der offizielle Race Guide können sich ändern –
         1–2 Wochen vor Abreise erneut prüfen. Für die UK-Einreise: gültiger Reisepass und UK ETA für alle vier.</p>
@@ -583,29 +632,12 @@
 (function () {
   "use strict";
 
-  /* ---------- Theme toggle ---------- */
-  var root = document.documentElement;
-  var tkey = "london2026.theme";
-  try {
-    var saved = localStorage.getItem(tkey);
-    if (saved === "dark" || saved === "light") root.setAttribute("data-theme", saved);
-  } catch (e) {}
-  document.getElementById("themeBtn").addEventListener("click", function () {
-    var cur = root.getAttribute("data-theme");
-    if (!cur) {
-      cur = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    }
-    var next = cur === "dark" ? "light" : "dark";
-    root.setAttribute("data-theme", next);
-    try { localStorage.setItem(tkey, next); } catch (e) {}
-  });
-
   /* ---------- Countdown ---------- */
   var departure = new Date("2026-10-09T16:50:00+02:00");
   var raceStart = new Date("2026-10-11T09:00:00+01:00");
   function fmt(target) {
     var ms = target - new Date();
-    if (ms <= 0) return "geschafft 🎉";
+    if (ms <= 0) return "geschafft";
     var d = Math.floor(ms / 86400000);
     var h = Math.floor((ms % 86400000) / 3600000);
     var m = Math.floor((ms % 3600000) / 60000);
