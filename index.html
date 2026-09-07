@@ -93,7 +93,7 @@
     background: var(--slate);
     color: #fff;
   }
-  .nav-inner { max-width: 1180px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 20px; }
+  .nav-inner { max-width: 1180px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; gap: 20px; position: relative; }
   .brand {
     font-family: "League Spartan", sans-serif; font-weight: 700;
     font-size: 17px; letter-spacing: .12em; text-transform: uppercase;
@@ -109,6 +109,33 @@
     padding: 8px 12px; border-radius: 6px; white-space: nowrap;
   }
   .nav-links a:hover { color: #fff; background: rgba(255,255,255,.08); }
+
+  .nav-toggle {
+    display: none;
+    margin-left: auto; width: 42px; height: 36px; padding: 0 10px;
+    flex-direction: column; justify-content: center; gap: 5px;
+    background: none; border: 1px solid rgba(255,255,255,.28); border-radius: 8px; cursor: pointer;
+  }
+  .nav-toggle span { display: block; height: 2px; background: #fff; border-radius: 2px; }
+  .nav-toggle:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+
+  @media (max-width: 720px) {
+    .nav-toggle { display: flex; }
+    .brand { font-size: 15px; letter-spacing: .08em; }
+    .nav-links {
+      display: none; position: absolute; top: 100%; left: 0; right: 0;
+      flex-direction: column; gap: 0; margin-left: 0; overflow: visible;
+      background: var(--slate); border-top: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 22px 34px -20px rgba(0,0,0,.6);
+    }
+    .nav.open .nav-links { display: flex; }
+    .nav.open .nav-toggle { border-color: var(--orange); }
+    .nav-links a {
+      padding: 14px 24px; font-size: 15px; border-radius: 0;
+      border-top: 1px solid rgba(255,255,255,.07); color: #fff;
+    }
+    .nav-links a:first-child { border-top: 0; }
+  }
 
   /* ---------- Hero ---------- */
   .hero {
@@ -363,19 +390,29 @@
     .pass-meta { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 460px) {
-    .band { padding: 60px 0; }
+    .band { padding: 58px 0; }
+    .wrap { padding: 0 18px; }
+    .hero { padding-top: 48px; }
+    .hero .wrap { padding-bottom: 118px; }
     .stats, .days, .wx-climate { grid-template-columns: 1fr; }
     .wx-cards { grid-template-columns: repeat(2, 1fr); }
     .rf-grid { grid-template-columns: 1fr; }
+    .pass-route { gap: 8px; padding: 18px 16px 14px; }
+    .pass-route .ap { font-size: 24px; }
+    .cd { min-width: 0; flex: 1 1 100%; }
+    .band-head { margin-bottom: 32px; }
   }
 </style>
 </head>
 <body>
 
-<nav class="nav">
+<nav class="nav" id="nav">
   <div class="nav-inner">
     <a class="brand" href="#top">London <span>&hearts;</span> Melanie</a>
-    <div class="nav-links">
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
       <a href="#ueberblick">Überblick</a>
       <a href="#fluege">Flüge</a>
       <a href="#unterkunft">Unterkunft</a>
@@ -719,6 +756,28 @@
 <script>
 (function () {
   "use strict";
+
+  /* ---------- Mobile-Navigation ---------- */
+  var nav = document.getElementById("nav");
+  var navToggle = document.getElementById("navToggle");
+  var navLinks = document.getElementById("navLinks");
+  function setNav(open) {
+    nav.classList.toggle("open", open);
+    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    navToggle.setAttribute("aria-label", open ? "Menü schließen" : "Menü öffnen");
+  }
+  navToggle.addEventListener("click", function () {
+    setNav(!nav.classList.contains("open"));
+  });
+  navLinks.addEventListener("click", function (e) {
+    if (e.target.tagName === "A") setNav(false);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") setNav(false);
+  });
+  document.addEventListener("click", function (e) {
+    if (nav.classList.contains("open") && !nav.contains(e.target)) setNav(false);
+  });
 
   /* ---------- Countdown ---------- */
   var departure = new Date("2026-10-09T16:50:00+02:00");
